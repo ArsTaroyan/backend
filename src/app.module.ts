@@ -20,7 +20,7 @@ import { Message } from './chat/message.entity';
       database: process.env.DB_NAME,
       entities: [User, Product, Conversation, Message],
       autoLoadEntities: true,
-      synchronize: true,
+      synchronize: false,
     }),
     AuthModule,
     ProductsModule,
